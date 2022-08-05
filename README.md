@@ -3,7 +3,7 @@
 
 ```mermaid
 graph LR
-A[Square Rect] -- Cloud/Desktop --> B((VM))
+A[Linux] -- Cloud/Desktop --> B((VM))
 A -- Docker/Kubernets --> C(Container)
 A -- Laptop --> D{Hardware}
 ```
