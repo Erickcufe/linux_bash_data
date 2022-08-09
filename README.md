@@ -100,6 +100,7 @@ echo "something" > append.txt
 echo "overwrite" > append.txt
 
 echo "another thing" >> append.txt
+```
 
 Para echar a la basura el output se usa el siguiente comando `2>`
 
@@ -114,5 +115,5 @@ head -f /PATH/file.txt
 head -n 4 /PATH/file.txt
 
 tail -n 4 /PATH/file.txt
-
+```
 
