@@ -73,3 +73,46 @@ Al tener docker podemos tener acceso a distitos entornos contenidos de distintos
 
 > Una forma útil de aprender bash es checar los dockers de configuración de los lenguajes de programación más famosos, como por ejemplo [python](https://hub.docker.com/_/python)
 
+# Pipelines
+
+El simbolo del pipe es `|`, el de output del pipelie es `>`. Para hacer un pipe pero condicionado a qué primero se ejecute el código anterior, se usa `&&`.
+
+Ejemplo: `ls -l /bin && touch newfile.txt`
+
+Ejemplos:
+
+```
+STR=$'1. This is a line\n2. This is a line\n3. This is a line.'
+echo "$STR" > lines.txt
+
+cat lines.txt | sort -r 
+
+cat lines.txt | sort -r | less
+
+cat lines.txt | grep 3 > match.txt
+
+```
+
+Para agregar texto a un archivo. Con el simbolo `>>` se agrega en vez de sobreescribir. 
+
+```
+echo "something" > append.txt
+echo "overwrite" > append.txt
+
+echo "another thing" >> append.txt
+
+Para echar a la basura el output se usa el siguiente comando `2>`
+
+```
+ls -l /wrong/path 2> /dev/null
+```
+
+Para ver elementos finales o iniciales de un archivo
+
+```
+head -f /PATH/file.txt
+head -n 4 /PATH/file.txt
+
+tail -n 4 /PATH/file.txt
+
+
