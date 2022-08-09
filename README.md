@@ -39,3 +39,37 @@ Al tener docker podemos tener acceso a distitos entornos contenidos de distintos
 
 > Para conocer la lista de todos los comandos disponibles, se localizan en el directorio `/bin/` y con `ls -l` los puedes desplegar. 
 
+# Usando Shell
+
+## Explorar
+
+- `pwd` conocer el path 
+- `ls -lah`ver la lista de archivos con permisos
+- `cd ~` para regresar al home
+
+## Ver archivos
+
+- `less`
+- `cat`
+- `wc -l /etc/passwd` para ver el numero de lineas de un archivo
+
+## Modificar archivos y directorios
+
+- `touch newfile.txt` para generar nuevos archivos.
+- `mkdir newdir` crear directorios
+- `mkdir -p moredir/dir1/dir2` para crear todo el PATH
+- `rm -rf moredir` para eliminar todo el directorio 
+- `mv` comando para mover archivos; también funciona para renombrar un archivo
+
+## Procesos
+
+- `ps` para monitorear procesos
+- `ps -ef | grep spotify` para buscar un proceso en especifico
+- `jobs`
+- `Ctrl` + `c` para detener procesos
+- `Ctrl` + `z` para pausar procesos
+- `fg 1` para reanudar procesos que se dejaron en pausa, y encaso de que los procesos esten con `&` en el background, con `fg 1` se vuelven a la terminal para poder ser pausados o eliminados.
+
+
+> Una forma útil de aprender bash es checar los dockers de configuración de los lenguajes de programación más famosos, como por ejemplo [python](https://hub.docker.com/_/python)
+
