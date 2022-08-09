@@ -117,3 +117,14 @@ head -n 4 /PATH/file.txt
 tail -n 4 /PATH/file.txt
 ```
 
+Para navegar por el historial con pipes
+
+```
+history | less
+history | grep tail
+```
+ Con el comando `!`seguido de la linea del historial que quieras volver a ejecutar. **Ejemplo:** `!56` se vuelve a ejecutar el código de la linea 56 del historial.  
+ 
+ Para correr el último código del historial se usa el comando `!!`.
+
+
