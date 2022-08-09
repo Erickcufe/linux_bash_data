@@ -22,7 +22,20 @@ Al tener docker podemos tener acceso a distitos entornos contenidos de distintos
 
 > Kubernetes es un sistema de código libre para la automatización del despliegue, ajuste de escala y manejo de aplicaciones en contenedores que fue originalmente diseñado por Google y donado a la Cloud Native Computing Foundation. Soporta diferentes entornos para la ejecución de contenedores, incluido Docker.
 
-# Primeros comandos útiles
+# Comandos útiles
 
 - `mdfind` para encontrar archivos a traves de una palabra clave.
 - `chmod +x` para hacer ejecutables los archivos en caso de no tener permisos. 
+
+## Hora y fechas:
+
+- `cal` abre un calendario
+- `date` fecha y hora actual
+
+## Uso de disco o tamaño de archivos:
+
+- `df -h` despliega los discos y su uso de memoria.
+- `du -sg *` despliega el tamaño de los archivos del directorio.
+
+> Para conocer la lista de todos los comandos disponibles, se localizan en el directorio `/bin/` y con `ls -l` los puedes desplegar. 
+
