@@ -65,7 +65,7 @@ Al tener docker podemos tener acceso a distitos entornos contenidos de distintos
 
 - `ps` para monitorear procesos
 - `ps -ef | grep spotify` para buscar un proceso en especifico
-- `jobs`
+- `jobs` para ver los procesos detenidos o pausados
 - `Ctrl` + `c` para detener procesos
 - `Ctrl` + `z` para pausar procesos
 - `fg 1` para reanudar procesos que se dejaron en pausa, y encaso de que los procesos esten con `&` en el background, con `fg 1` se vuelven a la terminal para poder ser pausados o eliminados.
