@@ -135,3 +135,13 @@ A[Client] -- key --> B[Server/Cloud]
 C[Tunnel Ports] -- Key --> D(Remote 8080)
 E[Git] -- Key --> F[GitHub]
 ```
+
+Para crear una llave pública **ssh** se usa el siguiente código:
+
+```
+ssh-keygen -t rsa
+```
+
+Despues usar `cat /home/ec2-user/.ssh/id_rsa.pub` y copiar a GitHub.
+
+
