@@ -127,4 +127,11 @@ history | grep tail
  
  Para correr el último código del historial se usa el comando `!!`.
 
+# SSH
 
+```mermaid
+graph LR
+A[Client] -- key --> B[Server/Cloud]
+C[Tunnel Ports] -- Key --> D(Remote 8080)
+E[Git] -- Key --> F{GitHub}
+```
