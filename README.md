@@ -133,5 +133,5 @@ history | grep tail
 graph LR
 A[Client] -- key --> B[Server/Cloud]
 C[Tunnel Ports] -- Key --> D(Remote 8080)
-E[Git] -- Key --> F{GitHub}
+E[Git] -- Key --> F[GitHub]
 ```
