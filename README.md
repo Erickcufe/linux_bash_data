@@ -145,3 +145,13 @@ ssh-keygen -t rsa
 Despues usar `cat /home/ec2-user/.ssh/id_rsa.pub` y copiar a GitHub.
 
 
+# Configuración .bashrc y .zshrc
+
+Para configurar el `.bashrc` se accede con el vim o nvim. Ahi se pueden añadir Aliases, y establecer variables asi como entornos. `vim ~/.bashrc` ó `nvim ~/.bashrc`.
+
+Para instalar en la terminal ssh la [zsh](https://ohmyz.sh), se usa **on-my-zsh**, Mac ya tiene por default esta actualización. En linuex se usa el siguiente comando para instalarla: `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`.
+
+
+
+
+
