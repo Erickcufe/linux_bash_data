@@ -149,7 +149,11 @@ Despues usar `cat /home/ec2-user/.ssh/id_rsa.pub` y copiar a GitHub.
 
 Para configurar el `.bashrc` se accede con el vim o nvim. Ahi se pueden añadir Aliases, y establecer variables asi como entornos. `vim ~/.bashrc` ó `nvim ~/.bashrc`.
 
-Para instalar en la terminal ssh la [zsh](https://ohmyz.sh), se usa **on-my-zsh**, Mac ya tiene por default esta actualización. En linuex se usa el siguiente comando para instalarla: `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`.
+Para instalar en la terminal ssh la [zsh](https://ohmyz.sh), se usa **on-my-zsh**, Mac ya tiene por default esta actualización. En linux se usa el siguiente comando para instalarla: `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`.
+
+Para modificar la configuración de `zsh` se usa `vim ~/.zshrc`, ahi se pueden agregar [temas](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) y [plugins](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins).
+
+Existen comando exclusivos para MacOS, se pueden ver con `diskutil`. 
 
 
 
