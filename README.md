@@ -156,6 +156,28 @@ Para modificar la configuración de `zsh` se usa `vim ~/.zshrc`, ahi se pueden a
 Existen comando exclusivos para MacOS, se pueden ver con `diskutil`. 
 
 
+# Variables de Shell
+
+Para crear una variable en Shell se utiliza `export`.
+
+Ejemplo:
+
+```
+export FOOD="apple"
+echo $FOOD
+echo "I love" $FOOD
+```
+
+Se pueden declarar variables simplemente de entorno, pero siempre será mejor declararlas con `export`. Estas variables también se pueden guardar en el archivo de configuración `.basrc` ó `.zshrc`.
+
+Para generar **entornos** personalizados por proyecto se puede hacer lo siguiente:
+
+1. Crear un archivo `.sh` en la carpeta de un proyecto especifico. `touch projectENV.sh`
+2. Modificar ese archivo. `nvim projectENV.sh`
+3. Agregar al archivo las variables y las modificaciones que se deseen hacer en ese entorno. `export SECRET="ABCD"`.
+4. Modificar el archivo de configuración `.zshrc` o `.bashrc`. `nvim ~/.zshrc`.
+5. Agregar al archivo el alias al PATH donde se localiza `projectENV.sh` como por ejemplo: `alias myproject="cd /Users/erickCuevas/Documents/cursera/linux_bash_data/project && source /Users/erickCuevas/Documents/cursera/linux_bash_data/project/projENV.sh" 
+6. Ahora si, al darle source a nuestro `.zshrc` modificado se puede acceder al entorno que creamos para el proyecto especifico al solo teclar `myproject`. 
 
 
 
