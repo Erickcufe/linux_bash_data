@@ -209,5 +209,5 @@ echo -1993 | rev
 
 ## Usando Standard In
 
-
+Para esblecer inputs se puede utilizar `read -p 'File: ' FILENAME` o `less < fruit.txt`. 
 
