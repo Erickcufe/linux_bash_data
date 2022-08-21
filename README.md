@@ -211,3 +211,27 @@ echo -1993 | rev
 
 Para esblecer inputs se puede utilizar `read -p 'File: ' FILENAME` o `less < fruit.txt`. 
 
+# Usando Standard Error
+
+**Crear error**
+
+```
+ls -l /var/FAKEDIR
+```
+
+**Escribiendo el error a un archivo**
+
+```
+ls -l /var/FAKEDIR 2> error.txt
+
+# O para agregar los errores
+
+ls -l /var/FAKEDIR 2>> error.txt
+
+```
+
+**Eliminar el error**
+
+```
+ls -l /var/FAKEDIR 2> /dev/null
+```
