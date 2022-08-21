@@ -179,5 +179,35 @@ Para generar **entornos** personalizados por proyecto se puede hacer lo siguient
 5. Agregar al archivo el alias al PATH donde se localiza `projectENV.sh` como por ejemplo: `alias myproject="cd /Users/erickCuevas/Documents/cursera/linux_bash_data/project && source /Users/erickCuevas/Documents/cursera/linux_bash_data/project/projENV.sh" 
 6. Ahora si, al darle source a nuestro `.zshrc` modificado se puede acceder al entorno que creamos para el proyecto especifico al solo teclar `myproject`. 
 
+# Standard Streams (flujos estandar)
+
+EStos flujos en UNIX se utilizan para filtrar y procesar los datos, y ver los errores en el camino. 
+
+## Usando Standard Out
+
+El comando `>>` agrega al output que ya existe. En cambio el comando `>` sobreescribe. 
+
+Para contar elementos unicos se utiliza el siguiente ejemplo:
+
+```
+echo -e "Apple\nCarrot\nBanana" | sort | unique -c
+``` 
+
+Para encontrar patrones de caracteres se utiliza:
+
+```
+echo -e "Apple\nCarrot\nBanana" | sort | unique -c | grep Apple
+
+ps -ef | grep python
+```
+
+Para revertir el orden de un caracter se utiliza lo siguiente:
+
+```
+echo -1993 | rev
+```
+
+## Usando Standard In
+
 
 
