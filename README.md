@@ -310,3 +310,11 @@ done
 - `find`
 - `locate`
 
+**Encontrar todos los scripts de bash**: `find . -name "*.sh"`
+
+**Encontrar todos los archivos CSV**: `find . -name "*.csv"`
+
+**Encontrar todos los ejecutables no visibles**: `find . -perm /+x ! -name '.*' -type f`
+
+**Encontrar todos los ejecutables no visibles e ignorar los directorios .git**: `find . -perm /+x -not -path '*/\.*' -type f`
+
