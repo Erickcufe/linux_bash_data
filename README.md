@@ -235,3 +235,27 @@ ls -l /var/FAKEDIR 2>> error.txt
 ```
 ls -l /var/FAKEDIR 2> /dev/null
 ```
+
+# If Else
+Creando el archivo con `nvim if-else.sh`
+
+```
+#!/bin/sh
+echo "What a food do you choose?"
+read FOOD
+
+if [ "$FOOD" = "Apple" ]; then
+    echo "You are a healthy person"
+elif [ "$FOOD" = "Pizza" ]; then
+    echo "You are a fat person"
+else
+    echo "You are a vegetarian"
+fi
+
+```
+
+Para darle permisos de ejecución `chmod +x if-else.sh` y ejecutandolo `./if-else.sh`. 
+
+# Shell Loops
+
+
