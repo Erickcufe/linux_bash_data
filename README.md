@@ -270,11 +270,40 @@ Para evaluar condiciones se utiliza **AND** que es bash es `&&` y **OR** que es 
 
 - `head`
 - `tail`
+- `shuf` (este comando muestra aleatoriamente)
 
 ## Filter 
 
 - `grep`
 - `cut`
+
+Ejercicios:
+
+```
+echo "¿Cuantas lineas quieres?"
+read LINES
+declare -a array=("apple" "pear" "cherry)
+
+COUNT=1
+while [ $COUNT -le $LINES ]
+do
+  rand=$[ $RANDOM % 3 ]
+  echo "$COUNT ${array[$rand]}" >> filter-file.txt
+  ((COUNT++)
+done
+```
+
+**Para encontrar un patrón**: `grep apple filter-file.txt`
+
+**Para contar ocurrencias**: `grep -c apple filter-file.txt`
+
+**Para encontrar dos patrones**: `grep -e apple -e pear filter-file.txt`
+
+**Contar ocurrencias de ambos patrones**: `grep -c -e apple -e pear filter-file.txt`
+
+**Mostrar todas las líneas que NO contengan el patrón**: `gerp -v apple filter-file.txt`
+
+
 
 ## Search
 
