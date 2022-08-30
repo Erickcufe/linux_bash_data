@@ -264,4 +264,20 @@ Los ejemplos se hicieron con *nvim*.
 
 Para evaluar condiciones se utiliza **AND** que es bash es `&&` y **OR** que es `||`. Estos sirven para hacer pipes uno por ejemplo con `&&` el siguiente proceso solo sucede sio antes se logró el anterior. En contrario el `||` si no sale un proceso pasa al que sigue. 
 
+# Manipular data con bash shell
+
+## Truncate 
+
+- `head`
+- `tail`
+
+## Filter 
+
+- `grep`
+- `cut`
+
+## Search
+
+- `find`
+- `locate`
 
