@@ -258,4 +258,10 @@ Para darle permisos de ejecución `chmod +x if-else.sh` y ejecutandolo `./if-els
 
 # Shell Loops
 
+Los ejemplos se hicieron con *nvim*. 
+
+## Evaluar condiciones
+
+Para evaluar condiciones se utiliza **AND** que es bash es `&&` y **OR** que es `||`. Estos sirven para hacer pipes uno por ejemplo con `&&` el siguiente proceso solo sucede sio antes se logró el anterior. En contrario el `||` si no sale un proceso pasa al que sigue. 
+
 
