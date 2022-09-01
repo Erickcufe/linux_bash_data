@@ -441,3 +441,27 @@ phrase_generator "${COUNT}" "${PHRASE}"
 
 ```
 
+# Bash-Adjacent Tools
+
+## Makefiles
+
+Para hacer un `makefile` se puede usar **nvim** del siguiente modo: `nvim makefile`. Dentro del archivo se puede automatizar procesos, declarar receta, y se parace mucho a bash. Para acceder a las **"recetas"** basta con usar el comando `make`.  
+
+Links para aprender mas:
+- [https://github.com/theicfire/makefiletutorial](https://github.com/theicfire/makefiletutorial)
+- [https://makefiletutorial.com](https://makefiletutorial.com)
+- [https://www.cs.oberlin.edu/~kuperman/help/vim/makefiles.html](https://www.cs.oberlin.edu/~kuperman/help/vim/makefiles.html)
+
+
+## Dockerfile
+
+Este tipo de archivo nos permite automatizar procesos, generar contededoras y dar formato. Se generan también con **nvim**. Y una vez el archivo esta lito se usa el comando `docker build .`
+Para ver las imagenes de docker generadas se usa `docker image ls`. Para ejecutar el contenedor usamos el ID de la imagen `docker run -it 41137ec71c1d bash`.
+
+Para aprender más:
+
+- [https://linuxhint.com/create-dockerfile/](https://linuxhint.com/create-dockerfile/)
+- [https://docs.docker.com/compose/gettingstarted/](https://docs.docker.com/compose/gettingstarted/)
+- [https://docs.docker.com/develop/develop-images/baseimages/](https://docs.docker.com/develop/develop-images/baseimages/)
+
+
