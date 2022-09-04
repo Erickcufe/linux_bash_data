@@ -21,11 +21,11 @@ do
 key="$1"
 
 case $key in
-    -c|--count)
+    -c|--number)
     COUNT="$2"
     shift
     ;;
-    -p|--phrase)
+    -p|--message)
     PHRASE="$2"
     shift
     ;;
