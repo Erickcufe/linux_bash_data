@@ -493,3 +493,22 @@ for key in "${!mealhash[@]}"; do
 done
 ```
 
+# Searching a Filesystem in Linux
+
+- Visual: dir
+- Live: `find .txt`
+- Metadata: `locate .txt` ; `mdfind`
+
+`sudo updatedb`
+
+`locate -c .zshrc`
+
+`locate .zshrc`
+
+`find . -name .zshrc`
+
+`sudo find / -name .zshrc`
+
+
+
+
