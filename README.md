@@ -510,5 +510,19 @@ done
 `sudo find / -name .zshrc`
 
 
+`touch /tmp/foo{0..10}.txt` para generar 11 archivos. 
+
+`ls -l /tmp`
+
+`find /tmp -name foo* -type f -print`
+
+Para usar una función se usa `xargs`:
+
+`find /tmp -name foo* -type f -print | xargs /bin/rm -f`
+
+**`mdfind`**
+
+
+
 
 
