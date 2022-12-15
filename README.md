@@ -625,3 +625,16 @@ shuf -n 1 amazon_review_5k.txt | tr a-z A-Z
 ### AWK
 
 [awk](https://web.archive.org/web/20061017103958/http://cm.bell-labs.com/cm/cs/awkbook/index.html)
+
+
+## Using Regular Expressions (regex) in Linux
+
+`echo 415-444-5599 | grep '\(([0-9]\{3\})\|[0-9]\{3\}\)[ -]\?[0-9]\{3\}[ -]\?[0-9]\{4\}'` 
+
+`cat phone-numbers.txt | grep '\(([0-9]\{3\})\|[0-9]\{3\}\)[ -]\?[0-9]\{3\}[ -]\?[0-9]\{4\}'` 
+
+`ls | grep -Eh 'phone|fruit'`
+
+ `grep -EH '2005|2006' nissa_stocks.txt| wc -l`
+
+
