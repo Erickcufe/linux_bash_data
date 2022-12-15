@@ -598,3 +598,30 @@ tar -zxvf foo.tgz
 
 `cat nissa_stocks.txt | rev | cut -d, -r1 | rev > new_nissan.txt`
 
+`shuf -n 10 nissan_stocks.txt` # selecciona de manera randon el numero de filas que decidas
+
+## Editing with Truncation, awk and sed in Linux
+
+### You can also transliterate
+`echo "lower" | tr a-z A-Z`
+
+`echo "hello" | tr a-z A-Z`
+
+### You can combine truncate and transliterate together
+
+shuf -n 1 amazon_review_5k.txt | tr a-z A-Z
+
+# Replace occurrences of MIXED with NEGATIVE
+
+`echo "MIXED" | sed 's/MIXED/NEGATIVE'`
+
+### sed
+
+`shuf -n 100 nissa_stocks.txt | sed 's/2004/2023/'`
+
+`shuf -n 100 nissa_stocks.txt | sed 's/2004/2023/' | grep -c 2023`
+
+
+### AWK
+
+[awk](https://web.archive.org/web/20061017103958/http://cm.bell-labs.com/cm/cs/awkbook/index.html)
