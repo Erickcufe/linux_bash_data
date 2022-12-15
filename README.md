@@ -586,4 +586,15 @@ tar -zxvf foo.tgz
 
 # Processing Text in Linux
 
+`grep -c name file.txt`
+
+`diff fruit1.txt fruit2.txt`
+
+`uniq -c fruits1.txt`
+
+`sort fruits.txt`
+
+`cat nissa_stocks.txt | rev | cut -d, -r1 | rev`
+
+`cat nissa_stocks.txt | rev | cut -d, -r1 | rev > new_nissan.txt`
 
