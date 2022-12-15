@@ -522,7 +522,68 @@ Para usar una función se usa `xargs`:
 
 **`mdfind`**
 
+# Modify the filesystem in Linux
+
+**C** Create: touch, mkdir
+
+**R** Read: cat, less, grep
+
+**U** Update: mv/tar/zip/chmod
+
+**D** Delete: rm, rmdir
+
+## Moving files and Directories in Linux 
+
+`mkdir foo` 
+
+`mkdir -p bar/bam/biz` # esto para generar todos los directorios 
+
+Para generar un archivo dentro del directorio generado `touch bar/one.txt`
+
+`ls -lR bar`
+
+Para mover archivos y directorio se usa `mv`
+
+Para copiar `cp -r bar/bam .`
+
+`rsync` hace que se sincronicen varios directorios
+
+`rsync -av foo/ newspot/foo/` 
+
+## Setting permissions on Files and Directories in Linux
+
+`ls -l` 
+
+`chmod +x script.sh` 
+
+`sudo su -`
+
+`whoaim`
 
 
+
+## Archiving Data in Linux
+
+### Zip
+
+```
+#archive
+zip -r archives/foo.zip foo
+cd archives
+
+#unarchive
+unzip foo.zip
+```
+
+### Tar
+```
+#archive
+tar -zcvf archives/foo.tgz foo
+
+#unarchive
+tar -zxvf foo.tgz
+```
+
+# Processing Text in Linux
 
 
