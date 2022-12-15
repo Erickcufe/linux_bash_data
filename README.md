@@ -522,6 +522,15 @@ Para usar una función se usa `xargs`:
 
 **`mdfind`**
 
+# Modify the filesystem in Linux
+
+```mermaid
+graph LR
+A[Records] -- touch/mkdir --> B(C "Create")
+A -- cat/less/grep --> C(R "Read")
+A -- mv/tar/zip/chmod --> D(U "Update")
+A -- rm/rmdir --> E(D "Delete")
+```
 
 
 
