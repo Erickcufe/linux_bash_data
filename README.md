@@ -526,10 +526,10 @@ Para usar una función se usa `xargs`:
 
 ```mermaid
 graph LR
-A[Records] -- touch/mkdir --> B(C "Create")
-A -- cat/less/grep --> C(R "Read")
-A -- mv/tar/zip/chmod --> D(U "Update")
-A -- rm/rmdir --> E(D "Delete")
+A[Records] -- touch/mkdir --> B(C_"Create")
+A -- cat/less/grep --> C(R_"Read")
+A -- mv/tar/zip/chmod --> D(U_"Update")
+A -- rm/rmdir --> E(D_"Delete")
 ```
 
 
